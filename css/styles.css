@@ -1,0 +1,115 @@
+:root{
+  --primary-color:hsl(214, 84%, 56%);
+  --text-color:hsl(0, 0%, 31%);
+  --headings-color:hsl(0, 0%, 57%);
+  --bg-color:hsl(0, 0%, 90%);
+  --bg-card-color:hsl(0, 0%, 98%);
+  --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --box-shadow: 5px 0 15px rgb(0 0 0 /0.2);
+
+}
+
+body{
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);;
+  font-family: 'Open Sans', sans-serif;
+  transition: var(--transition);
+}
+
+body.dark{
+  --text-color:hsl(0, 0%, 83%);
+  --headings-color:hsl(0, 0%, 76%);
+  --bg-color:hsl(0, 0%, 15%);
+  --bg-card-color:hsl(0, 0%, 20%);
+  
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.switches{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:200px;
+}
+
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.toggle-theme__icon {
+  color: var(--text-color);
+  margin-right: 0.5em;
+}
+.toggle-theme__text {
+  font-size: 0.8rem;
+}
+
+.colors{
+  display: flex;
+  justify-content: space-between;
+  height:20px;
+  width:100px;
+}
+
+.colors__item{
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-color);
+  background-color: var(--primary-color);
+}
+
+.colors__item--blue{
+  --primary-color: #3182ed;
+}
+
+.colors__item--green{
+  --primary-color: hsl(150, 84%, 56%) 
+}
+
+.colors__item--purple{
+  --primary-color: hsl(276, 84%, 56%)
+}
+
+.colors__item--orange{
+  --primary-color: hsl(46, 84%, 56%)
+}
+
+.card-profile{
+  background-color: var(--bg-card-color);
+  width: 250px;
+  padding: 1em;
+  border-radius:.3em;
+  transition: var(--transition);
+}
+
+.card-profile__image-container{
+  height:200px;
+  width:250px;
+  border-radius:inherit;
+  overflow: hidden;
+}
+
+.card-profile__image{
+  width: inherit;
+  height:inherit;
+  display: block;
+  object-fit: cover;
+  object-position: 0 -45px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Portfolio</title>
+</head>
+<body class="dark">
+  <!-- TOGGLE COLOR -->
+  <div class="switches">
+    <div id="toggle-theme" class="toggle-theme">
+      <i id="toggle-icon" class="far fa-sun toggle-theme__icon"></i>
+      <p id="toggle-text" class="toggle-theme__text">Light Mode</p>
+    </div>
+    
+    <div id="toggle-color" class="colors">
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+      <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+    </div>
+  </div>
+  <!-- PROFILE CARD -->
+  <div class="card-profile">
+    <div class="card-profile__image-container">
+      <img src="assets/images/profile.jpg" alt="profile" class="card-profile__image">
+    </div>
+    <h2 class="title">Armando Casas</h2>
+    <p class="subtitle">Tailwind developer & window looker</p>
+    <div class="card-profile__info">
+      <div class="email">
+        <i>Icon</i>
+        <a href="mailto:armandocasas@gmail.com">armandocasas@gmail.com</a>
+      </div>
+      <div class="phone">
+        <i>Icon</i>
+        <a href="tel:+34123456789">123456789</a>
+      </div>
+    </div>
+    <div class="card-profile__description">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis optio ducimus soluta porro?
+    </div>
+  </div>
+  <script
+  src="https://kit.fontawesome.com/a0ab449b77.js"
+  crossorigin="anonymous"
+></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
