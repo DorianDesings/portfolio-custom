@@ -154,6 +154,7 @@ a {
   padding: 1em;
   border-radius: 0.3em;
   transition: var(--transition);
+  margin-bottom: 1em;
 }
 
 .skills__title {
@@ -200,4 +201,60 @@ a {
 
 .skills__bar--90::after {
   transform: translateX(90%);
+}
+
+.project {
+  position: relative;
+  background-color: var(--bg-card-color);
+  width: 800px;
+  padding: 1em;
+  border-radius: 0.3em;
+  transition: var(--transition);
+  margin-bottom: 1em;
+  display: flex;
+  align-items: start;
+}
+
+.project__image {
+  max-width: 30%;
+  margin-right: 2em;
+  border-radius: 0.5em;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__tags {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  position: absolute;
+  bottom: 1em;
+}
+
+.button {
+  display: inline-block;
+  width: 100px;
+  line-height: 2.5;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.button--primary-ghost {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
