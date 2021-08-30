@@ -45,11 +45,19 @@ a {
   text-decoration: none;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  background-color: var(--bg-card-color);
+}
+
 .switches {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 200px;
+  padding: 2em;
 }
 
 .toggle-theme {
@@ -68,9 +76,16 @@ a {
   font-size: 0.8rem;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  padding: 1em 1.5em;
+}
+
 .title {
   font-size: 1.2rem;
-  margin-bottom: 0.3em;
+  margin-bottom: 2em;
 }
 
 .subtitle {
@@ -89,10 +104,11 @@ a {
   height: 20px;
   border: 1px solid var(--text-color);
   background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 .colors__item--blue {
-  --primary-color: #3182ed;
+  --primary-color: hsl(214, 84%, 56%);
 }
 
 .colors__item--green {
@@ -253,8 +269,78 @@ a {
   color: #fff;
 }
 
-.button--primary-ghost {
+.button--ghost {
   background-color: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.card-experience {
+  background-color: var(--bg-card-color);
+  width: 350px;
+  padding: 1em;
+  border-radius: 0.3em;
+  transition: var(--transition);
+  margin-bottom: 1em;
+}
+
+.experience {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.3em;
+}
+
+.experience__image {
+  max-width: 15%;
+  margin-right: 1em;
+}
+
+.experience__time {
+  font-size: 0.8rem;
+  margin-bottom: 0.5em;
+}
+
+.experience__job {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.experience__description {
+  font-size: 0.8rem;
+  margin-bottom: 1.5em;
+}
+
+.card-hobbies {
+  background-color: var(--bg-card-color);
+  width: 350px;
+  padding: 1em;
+  border-radius: 0.3em;
+  transition: var(--transition);
+  margin-bottom: 1em;
+}
+
+.hobbie__image-container {
+  height: 200px;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.hobbie__image {
+  border-radius: 0.3em;
+  object-fit: contain;
+  object-position: 0 -50px;
+}
+
+.hobbie__title {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.hobbie__description {
+  font-size: 0.8rem;
 }
