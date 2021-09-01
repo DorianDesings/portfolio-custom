@@ -113,11 +113,11 @@ a {
 }
 
 @media screen and (min-width: 760px) {
-  .column__left {
+  .column--left {
     grid-template-rows: repeat(3, min-content);
   }
 
-  .column__right {
+  .column--right {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
   }
