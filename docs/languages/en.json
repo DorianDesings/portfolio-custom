@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "rol": "Front-end developer",
+    "description": "I exchange quality education for a house with a pool, barbecue, dog and a large garden, that way I will never have to leave my domains.com again."
+  },
+  "experience": {
+    "first-job-title": "Backend-end Developer",
+    "first-job-dates": "Jan 1995 - Jan 2000",
+    "first-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "second-job-title": "Front-end Developer",
+    "second-job-dates": "Feb 2000 - Mar 2005",
+    "second-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "last-job-title": "Front-end Developer",
+    "last-job-dates": "Feb 2017 - Current",
+    "last-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+  }
+}

@@ -5,7 +5,8 @@
   --bg-color: hsl(0, 0%, 90%);
   --bg-card-color: hsl(0, 0%, 98%);
   --transition: color 0.1s, background-color 0.2s ease-in-out;
-  --box-shadow: 5px 0 15px rgb(0 0 0 /0.2);
+  --box-shadow: 5px 0 15px rgb(0 0 0 / 0.2);
+  --border-radius: 0.4em;
 }
 
 * {
@@ -39,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -60,16 +65,11 @@ a {
   }
 }
 
-@media screen and (min-width: 760px) {
-  .switches {
-    padding: 0;
-  }
-}
-
 .switches {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
   width: 100%;
 }
 
@@ -99,7 +99,6 @@ a {
 
 @media screen and (min-width: 760px) {
   .main {
-    /* max-width: 1400px; */
     padding: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -109,25 +108,27 @@ a {
 
 .column {
   display: grid;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 @media screen and (min-width: 760px) {
-  .column--left {
+  .column--left,
+  .column--right {
     grid-template-rows: repeat(3, min-content);
   }
 
   .column--right {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
+    align-items: start;
   }
 }
 
 .colors {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 20px;
-  width: 100px;
+  width: 250px;
 }
 
 .colors__item {
@@ -158,7 +159,7 @@ a {
 .card {
   width: 100%;
   padding: 1em;
-  border-radius: 0.5em;
+  border-radius: var(--border-radius);
   background-color: var(--bg-card-color);
   transition: var(--transition);
   box-shadow: var(--box-shadow);
@@ -173,8 +174,9 @@ a {
 }
 
 .card__image-container {
-  width: 300px;
-  border-radius: inherit;
+  width: 100%;
+  min-width: 320px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -191,6 +193,7 @@ a {
   height: inherit;
   display: block;
   object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 .card__header {
@@ -212,16 +215,6 @@ a {
 
 .card__text {
   font-size: 0.9rem;
-}
-
-.card__text--hide-in-mobile {
-  display: none;
-}
-
-@media screen and (min-width: 760px) {
-  .card__text--hide-in-mobile {
-    display: block;
-  }
 }
 
 .skills {
@@ -246,7 +239,7 @@ a {
   width: 175px;
   height: 8px;
   background-color: #888;
-  border-radius: 0.5em;
+  border-radius: var(--border-radius);
   overflow: hidden;
   transition: transform 0.3s;
 }
@@ -257,6 +250,7 @@ a {
   left: -175px;
   transform-origin: left;
   background-color: var(--primary-color);
+  transition: var(--transition);
 }
 
 .skills__bar--10::after {
@@ -318,7 +312,8 @@ a {
   margin-bottom: 1em;
   padding: 1em;
   border: 2px solid var(--primary-color);
-  border-radius: 0.3em;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
 }
 
 .experience__image {
@@ -336,6 +331,7 @@ a {
   font-size: 1rem;
   margin: 0;
   margin-bottom: 0.5em;
+  transition: var(--transition);
 }
 
 .experience__description {
@@ -343,25 +339,10 @@ a {
   margin-bottom: 1.5em;
 }
 
-.card-hobbies {
-  background-color: var(--bg-card-color);
-  width: 350px;
-  padding: 1em;
-  border-radius: 0.3em;
-  transition: var(--transition);
-  margin-bottom: 1em;
-}
-
 .hobbie__image-container {
   height: 200px;
-  border-radius: 0.3em;
+  border-radius: var(--border-radius);
   overflow: hidden;
-}
-
-.hobbie__image {
-  border-radius: 0.3em;
-  object-fit: contain;
-  object-position: 0 -50px;
 }
 
 .hobbie__title {
@@ -391,7 +372,8 @@ a {
   width: 100px;
   line-height: 2.5;
   text-align: center;
-  border-radius: 0.5em;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
 }
 
 .button--primary {

@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "rol": "Desarrollador Front-end",
+    "description": "Intercambio educación de calidad por una casa con piscina, barbacoa, perro y un gran jardín, de esa forma no tendré que salir nunca más de mis dominios.com"
+  },
+  "experience": {
+    "first-job-title": "Desarrollador Backend-end",
+    "first-job-dates": "Enero 1995 - Enero 2000",
+    "first-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "second-job-title": "Desarrollador Front-end",
+    "second-job-dates": "Feb 2000 - Mar 2005",
+    "second-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "last-job-title": "Desarrollador Front-end",
+    "last-job-dates": "Feb 2017 - Actualmente",
+    "last-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+  }
+}
