@@ -5,6 +5,7 @@ const toggleColor = document.getElementById('toggle-color');
 
 const buttons = document.getElementById('buttons');
 const textsToChange = document.querySelectorAll('[data-section]');
+const footerCopy = document.getElementById('footer-copy');
 
 const rootStyles = document.documentElement.style;
 
@@ -41,4 +42,8 @@ buttons.addEventListener('click', e => {
   if (language) {
     changeLanguage(language);
   }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  footerCopy.textContent = `DorianDesings ${new Date().getFullYear()}`;
 });

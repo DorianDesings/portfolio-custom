@@ -114,7 +114,7 @@ img {
 @media screen and (min-width: 760px) {
   .column--left,
   .column--right {
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content) 1fr;
   }
 
   .column--right {
@@ -352,6 +352,35 @@ img {
 
 .hobbie__description {
   font-size: 0.8rem;
+}
+
+.footer {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 760px) {
+  .footer {
+    /* flex-direction: row; */
+    height: 175px;
+  }
+}
+
+.footer__copy {
+  margin-top: 0;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .buttons {
